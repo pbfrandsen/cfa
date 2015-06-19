@@ -37,7 +37,7 @@ sum_violation_cats = [df['violation_category'].str.count(cat).sum()\
 xyviolcats = OrderedDict()
 xyviolcats['violation_cateogry'] = sum_violation_cats
 
-# Make a bar plot for workshop usefulness
+# Make a bar plot with violations
 bar_viol_cat = Bar(xyviolcats, violation_cats, title="Violations by category", 
     xlabel="type of violation", ylabel="number of violations", legend="top_right",
     palette=["#3399FF"])
